@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    direction: rtl;
+}
+nav {
+    background-color: #151515;
+    width: 100%;
+}
+nav::after{
+    content: " ";
+    position: absolute;
+    width:100%;
+    border:2px solid rgb(31, 172, 207) ;
+    bottom: 0px;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+nav .container .logo{
+    font-size: 1.6em;
+    color: rgb(31, 172, 207) ;
+    transition: 0.7s;
+}
+nav .container .logo:hover {
+    transform: scale(1.1);
+}
+nav .container .nav ul a{
+    font-size: 1.5em;
+    color: white;
+}
+@media (max-width:1200px) {
+nav .container .nav ul a{
+    font-size: 1em;
+}
+}
+nav .container .nav ul a:hover{
+color: #d5ad7d;
+}
+.contact-home{
+    width: 100%;
+    height: calc(100vh - 91px) ;
+    background-image: url(../imges/55.jpg);
+    background-size: cover;
+    background-attachment:fixed;
+    position: relative;
+}
+.contact-home .container {
+    display: flex;
+    padding: 300px 0px ;
+    align-items: center;
+
+}
+@media (max-width :468px){
+.contact-home .container{
+    padding: 300px 15px;
+    text-align: center;
+    font-size: 1em;
+}
+}
+.contact-home .container .content-text h1{
+    font-size: 2.8em;
+    color: black;
+    font-weight: bold;
+    line-height: 1.6;
+    
+}
+.contact-home .container .content-text p{
+    font-size: 1.8em;
+    color: black;
+    line-height: 1.2;
+}
+.contact-cards{
+    padding-top:60px ;
+    padding-bottom: 60px;
+    background-color: #151515;
+}
+.contact-cards .text{
+    display: flex;
+    justify-content: center;
+}
+.contact-cards .text h1{
+    font-size: 3em;
+    margin-bottom: 50px;
+    color: #d7d7d7;
+}
+.contact-cards .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contact-cards .container .card{
+    width: 18.25em;
+    min-height: 18em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    margin: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+    transition: 0.6s;
+    text-align: center;
+}
+.contact-cards .container .card:hover{
+    transform: scale(1.1);
+}
+.contact-cards .container .card img{
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    height: 200px;
+}
+.contact-cards .container .card img:hover{
+    opacity: 0.8;
+}
+.contact-cards .container .card h2{
+    font-size: 1.8em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.contact-cards .container .card button{
+    color: #151515;
+    background-color: #d5ad7d;
+    padding: 8px;
+    font-size: 1.2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+.contact-cards .container .card button:hover{
+    transform: translateX(5PX);
+}
